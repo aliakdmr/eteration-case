@@ -1,0 +1,40 @@
+ // Flex
+ @mixin display-flex($flex: flex, $flex-direction: row, $justify-content: center, $align-items: center, $flex-wrap: wrap) {
+    display: #{'-webkit'}-#{$flex};
+    display: #{'-moz'}-#{$flex};
+    display: #{'-ms'}-#{$flex};
+    display: #{'-o'}-#{$flex};
+    display: $flex;
+  
+    -webkit-flex-direction: $flex-direction;
+    -ms-flex-direction: $flex-direction;
+    flex-direction: $flex-direction;
+  
+    -webkit-justify-content: $justify-content;
+    justify-content: $justify-content;
+  
+    -webkit-align-items: $align-items;
+    align-items: $align-items;
+  
+    -webkit-flex-wrap: $flex-wrap;
+    -ms-flex-wrap: $flex-wrap;
+    flex-wrap: $flex-wrap;
+  }
+  
+  // Box Shadow
+  @mixin box-shadow($shadow...) {
+      -webkit-box-shadow: $shadow;
+      -moz-box-shadow: $shadow;
+      -o-box-shadow: $shadow;
+      box-shadow: $shadow;
+    }
+    
+    // Single side border-radius
+    @mixin border-radius($radius...) {
+      -webkit-border-radius: $radius;
+      -moz-border-radius: $radius;
+      border-radius: $radius;
+    }
+    
+    
+  

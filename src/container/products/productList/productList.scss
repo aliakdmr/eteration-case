@@ -1,0 +1,26 @@
+@import '../../../assets/scss/mixin.scss';
+.product-list-container {
+    width: 60%;
+    padding: 5px;
+
+    .pagination {
+        @include display-flex(flex, row, center, center, nowrap);
+        width: 100%;
+        margin-top: 20px;
+        gap: 4px;
+        .prev, .next {
+            position: relative;
+            display: block;
+            padding: var(--bs-pagination-padding-y) var(--bs-pagination-padding-x);
+            font-size: var(--bs-pagination-font-size);
+            color: var(--bs-pagination-color);
+            text-decoration: none;
+            background-color: var(--bs-pagination-bg);
+            border: var(--bs-pagination-border-width) solid var(--bs-pagination-border-color);
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}

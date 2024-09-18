@@ -1,0 +1,4 @@
+@import '../../assets/scss/mixin.scss';
+.layout-container{
+    @include display-flex(flex, column, flex-start, flex-start, nowrap);
+}

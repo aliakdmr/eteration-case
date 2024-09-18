@@ -1,0 +1,71 @@
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixin.scss';
+
+.header-container {
+    width: 100%;
+    @include display-flex(flex, row, flex-start, center, nowrap);
+    background-color: #2A59FE;
+    height: $header-height;
+
+    .banner {
+        width: 25%;
+        padding-left: 12.5%;
+        box-sizing: border-box;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 29.26px;
+        text-align: left;
+        color: #FFFFFF;
+    }
+
+    .input-container {
+        position: relative;
+        @include display-flex(flex, row, flex-start, center, nowrap);
+        width: 25%;
+    }
+
+    .input-container .i {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #aaa;
+    }
+
+    .input-container input {
+        width: 100%;
+        padding: 10px 40px;
+        /* Padding, ikona yer açmak için */
+    }
+
+    .search-bar {
+        height: 40px;
+        max-height: 40px;
+        box-sizing: border-box;
+
+
+    }
+    .basket-profile-container{
+        color: #fff;
+        @include display-flex(flex, row, flex-end, center, nowrap);
+        gap: 10px;
+        width: 50%;
+        box-sizing: border-box;
+        padding-right: 12.5%;
+        .basket-price{
+            @include display-flex(flex, row, center, center, nowrap);
+            gap: 3px;
+            .basket-amount{
+                margin-top: -3px;
+            }
+        }
+        .user-info{
+            @include display-flex(flex, row, center, center, nowrap);
+            gap: 3px;
+            .user-name{
+                margin-top: -3px;
+            }
+        }
+    }
+}

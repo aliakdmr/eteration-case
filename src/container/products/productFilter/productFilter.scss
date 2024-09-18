@@ -1,0 +1,65 @@
+@import '../../../assets/scss/mixin.scss';
+
+.product-filter-container {
+    @include display-flex(flex, column, flex-start, flex-start, nowrap);
+    width: 15%;
+    min-width: 15%;
+    margin-left: 5%;
+    box-sizing: border-box;
+    gap: 20px;
+
+    .pf-item {
+        width: 100%;
+        .pf-label {
+            font-family: Montserrat;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14.63px;
+            text-align: left;
+            color: #888888;
+            display: flex;
+            width: 100%;
+        }
+
+        .pf-item-card {
+            box-shadow: 0px 4px 4px 0px #ddd;
+            box-sizing: border-box;
+            background-color: #fff;
+            padding: 10px;
+            width: 100%;
+            @include display-flex(flex, column, center, flex-start, nowrap);
+            gap: 10px;
+            >div{
+                width: 100%;
+            }
+
+            .pf-radio-btn {
+                @include display-flex(flex, row, flex-start, center, nowrap);
+                gap: 10px;
+
+                input {
+                    height: 10px;
+                    width: 10px;
+                    scale: 1.5;
+                }
+
+                span {
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #000000;
+                }
+            }
+
+            .pf-checkbox-item {
+                @include display-flex(flex, row, flex-start, center, nowrap);
+                gap: 10px;
+                width: 100%;
+                >div{
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+}

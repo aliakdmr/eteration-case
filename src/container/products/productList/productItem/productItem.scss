@@ -1,0 +1,73 @@
+@import '../../../../assets/scss/mixin.scss';
+
+.product-item-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    gap: 20px;
+    transition: all 550ms ease;
+    animation: run ease 550ms;
+    -webkit-animation: run ease 550ms;
+    -moz-animation: run ease 550ms;
+    -o-animation: run ease 550ms;
+    -ms-animation: run ease 550ms;
+    box-sizing: border-box !important;
+
+    .product-item-box {
+        @include display-flex(flex, column, center, flex-start, nowrap);
+        height: 300px;
+        padding: 10px;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 4px 0px #ddd;
+        box-sizing: border-box;
+        background-color: #fff;
+        gap: 10px;
+
+        .pi-image-box {
+            width: 160px;
+            height: 150px;
+            overflow: hidden;
+
+            img {
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .pi-price {
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 17.07px;
+            text-align: left;
+            color: #2A59FE;
+        }
+
+        .pi-name {
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 17.07px;
+            text-align: left;
+            color: #000;
+        }
+
+        .pi-add-btn {
+            width: 160px;
+            height: Hug (36px)px;
+            padding: 8px 16px 8px 16px;
+            gap: 10px;
+            opacity: 0px;
+            background: #2A59FE !important;
+            color: #fff;
+        }
+    }
+
+}
